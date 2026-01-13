@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const port = 3000
+const movieRouter = require('./routes/movieRoutes')
 
 //Routers
 
@@ -17,7 +18,7 @@ app.use(express.urlencoded())
 app.get('/', (req, res) =>{
     res.send('<h1>Home Page</h1>')
 })
-
+app.use('/api', movieRouter)
 
 
 //Listener Start...
