@@ -3,7 +3,7 @@ const key = process.env.OMDB_API_KEY
 
 async function searchMovies(req, res){
     try{
-        const title = req.query.title //search term
+        const title = req.query.title //search term provided
 
         if(!title ){ //Validate if title has been included in endpoint.
             console.error('Error: API request failed due to missing title in parameters: ', error.message)
