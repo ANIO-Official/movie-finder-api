@@ -26,7 +26,7 @@ async function searchMovies(req, res){
 
 async function getMovieDetails(req, res){
     try{
-        const id = req.query.id //ID provided
+        const id = req.params.id //ID provided
         const response = await omdbClient.get(`/?apikey=${key}&i=${id}`)
 
         res.json(response.data)
