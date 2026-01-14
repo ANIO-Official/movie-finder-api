@@ -7,7 +7,7 @@ async function searchMovies(req, res){
 
         if(!title ){ //Validate if title has been included in endpoint.
             console.error('Error: API request failed due to missing title in parameters: ', error.message)
-            res.send(404).json({error: 'Title query parameter is required.'})
+            res.send(400).json({error: 'Title query parameter is required.'})
         }//continue if title is included. V
 
         const response = await omdbClient.get(`/?apikey=${key}&s=${title}`) //search by title
