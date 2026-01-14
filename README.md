@@ -1,5 +1,5 @@
 # Movie Finder API | Backend
-∠( ᐛ 」∠)_	
+🎥📺 🍿∠( ᐛ 」∠)_ 🥤🍫	
 
 A project study into building the core of a backend for an intermediary API, that fetches movie information from a public, external movie database.
 
@@ -34,9 +34,13 @@ https://github.com/ANIO-Official/movie-finder-api
 
 ## My process
 
- 1. Initialized repo and npm. Installed all necessary & personally preferenced dev packages.
+ 1. Initialized repo and npm. Installed all necessary & personally preferenced dev packages. Added server.js & .gitignore.
  2. Set up a basic express server & tested using `node server`
- 3. ...
+ 3. Create the API Client file to instantiate an axios instance for fetching.
+ 4. Created Movie Routes to hold all routes for all movie related `/api/...` related paths. Exported for use in the main server file.
+ 5. Created Movie Controller with function logic for all route endpoints. 
+ 6. Testing, Bug fixing, consultation, corrections. 
+ 7. Final testing with Thunderclient and the browser. Touch ups.
 
 ### Built with
 
@@ -46,8 +50,6 @@ https://github.com/ANIO-Official/movie-finder-api
 - Nodemon
 - Javascript
 - dotenv
-
-## Reflection
 
 ### Useful resources
 
